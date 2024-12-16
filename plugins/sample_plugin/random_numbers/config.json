@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Generate a set of random numbers between 0 and 1",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0.9,
+      "top_p": 0.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "num",
+      "description": "The number of random numbers",
+      "default": "10"
+    },
+    {
+      "name": "formatting",
+      "description": "How the set of random numbers will be displayed",
+      "default": "{num_0; num_1; ... num_n}"
+    }
+  ]
+}

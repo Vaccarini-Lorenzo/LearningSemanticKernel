@@ -1,0 +1,2 @@
+Generate a list of {{$num}} random numbers between 0 and 1.
+The formatting should be the following: {{$formatting}}
