@@ -13,7 +13,7 @@ async def main():
     # await kernel_tests.run_rand_function("10", "{num_0; num_1; ... num_n}")
     # await kernel_tests.run_planner("How can I generate 10 random numbers and send them via email?")
     # await kernel_tests.execute_planner("Generate 10 random numbers and send them via email")
-    # await kernel_tests.execute_planner_auto_invocation() (Try with "Generate 10 random numbers and send them to Jane")
+    await kernel_tests.execute_planner_auto_invocation()
 # Run the main function
 if __name__ == "__main__":
     asyncio.run(main())

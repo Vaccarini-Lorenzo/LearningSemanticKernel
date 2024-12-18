@@ -9,6 +9,7 @@ from semantic_kernel.planners.function_calling_stepwise_planner import (
     FunctionCallingStepwisePlannerOptions,
 )
 from plugins.sample_plugin.email.email_plugin import EmailPlugin
+from plugins.sample_plugin.esselunga_tickets.esselunga_plugin import EsselungaPlugin
 
 
 class KernelTests:
@@ -31,6 +32,7 @@ class KernelTests:
         self.plugins = []
         self.plugins.append(self.kernel.add_plugin(parent_directory=self.plugin_dir, plugin_name="sample_plugin"))
         self.plugins.append(self.kernel.add_plugin(plugin_name="EmailPlugin", plugin=EmailPlugin()))
+        self.plugins.append(self.kernel.add_plugin(plugin_name="EsselungaPlugin", plugin=EsselungaPlugin()))
 
     def __getService__(self, service_id):
         return self.kernel.get_service(service_id)
